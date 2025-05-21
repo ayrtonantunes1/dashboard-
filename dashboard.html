@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Educação</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="pagina">
+    
+    <!-- Menu Lateral -->
+    <aside class="menu-lateral">
+      <a href="dashboard.html"> <img src="img/logo site.png" alt="Logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><img src="img/icone dashboard.png" alt=""><span>Dashboard</span></li>
+          <li><img src="img/icone barras.png" alt=""><span>Indicadores</span></li>
+          <li><img src="img/icone comparação.png" alt=""><span>Comparações</span></li>
+          <li><img src="img/icone escolas.png" alt=""><span>Escolas</span></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Filtros -->
+    <div class="filtros">
+      <select>
+        <option>Estado</option>
+        <option>MA</option>
+        <option>MG</option>
+        <option>PI</option>
+      </select>
+      <select>
+        <option>Município</option>
+        <option>São Luís</option>
+        <option>S.J.D.Ribamar</option>
+        <option>Imperatriz</option>
+      </select>
+      <select>
+        <option>Ano</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+      </select>
+      <select class="indicador">
+        <option>Indicador</option>
+        <option>EVASÃO ESCOLAR</option>
+        <option>IDEB</option>
+        <option>INFRAESTRUTURA</option>
+      </select>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+      <!-- Introdução -->
+      <section class="introducao">
+        <div class="texto">
+          <h1>Facilitar o acesso à educação básica no Brasil</h1>
+          <p>Visualize dados sobre IDEB, evasão escolar e infraestrutura de forma simples e interativa.</p>
+          <div class="botoes">
+            <button class="botao-destaque">Explorar Indicadores</button>
+            <button class="botao-secundario">Sobre os Dados</button>
+          </div>
+        </div>
+        <img src="img/pessoas.png" alt="Ilustração de equipe" class="imagem-central">
+      </section>
+
+      <!-- Indicadores -->
+      <section class="indicadores">
+        <div class="card-indicador evasao">
+          <h3>EVASÃO ESCOLAR</h3>
+          <div class="conteudo-card">
+            <img src="img/icone evasao.png" alt="">
+            <span class="valor">15,2%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido barra-evasao"></div>
+          </div>
+        </div>
+
+        <div class="card-indicador ideb">
+          <h3>IDEB</h3>
+          <div class="conteudo-card">
+            <img src="img/icone IDEB.png" alt="">
+            <span class="valor">4,7</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido barra-ideb"></div>
+          </div>
+        </div>
+
+        <div class="card-indicador infraestrutura">
+          <h3>INFRAESTRUTURA ESCOLAR</h3>
+          <div class="conteudo-card">
+            <img src="img/icone infraestrutura.png" alt="">
+            <span class="valor">62%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido barra-infra"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
